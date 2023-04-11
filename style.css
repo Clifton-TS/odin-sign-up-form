@@ -1,0 +1,39 @@
+@font-face {
+    font-family: norse;
+    src: url(fonts/Norse-Bold.otf);
+  }
+
+body {
+    display: flex;
+    background-color: #665e5e;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.bg {
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-color: #5fe070;
+}
+
+.bar {
+    margin-top: 40%;
+    min-width: 33%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 7rem;
+    font-family: norse, sans-serif;
+}
+
+.logo {
+    margin: 2rem;
+    max-height: 90%;
+}
+
+.main {
+    flex-grow: 2;
+    background-color: #b34b4b;
+}
