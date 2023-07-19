@@ -23,14 +23,15 @@
 }
 
 .logoImage {
-    max-width: 20vh;
-    min-width: 100px;
+    /* max-width: 20vh;
+    min-width: 150px; */
+    width: clamp(150px, 10vw, 70vw);
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .odinText{
     color: white;
-    font-size: clamp(100px, 5vw, 100px);
+    font-size: clamp(150px, 10vw, 70vw);
     font-family: norse;
 }
