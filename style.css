@@ -1,39 +1,36 @@
 @font-face {
     font-family: norse;
-    src: url(fonts/Norse-Bold.otf);
+    src: url(Fonts/Norse-Bold.otf);
   }
 
-body {
-    display: flex;
-    background-color: #665e5e;
-    min-height: 100vh;
-    max-width: 100vw;
-}
-
-.bg {
-    background-image: url(images/bg.jpg);
+.background {
+    background-image: url(Images/leaves.jpg);
     background-size: cover;
-    background-color: #5fe070;
+    background-position: center;
 }
 
-.bar {
-    margin-top: 40%;
-    min-width: 33%;
-    height: 20%;
-    background-color: rgba(0, 0, 0, 0.6);
+.banner {
+    background-color: rgba(0, 0, 0, 0.801);
+    align-self: center;
+    min-height: fit-content;
+    max-height: fit-content;
+    min-width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logoImage {
+    max-width: 20vh;
+    min-width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.odinText{
     color: white;
-    font-size: 7rem;
-    font-family: norse, sans-serif;
-}
-
-.logo {
-    margin: 2rem;
-    max-height: 90%;
-}
-
-.main {
-    flex-grow: 2;
-    background-color: #b34b4b;
+    font-size: clamp(100px, 5vw, 100px);
+    font-family: norse;
 }
