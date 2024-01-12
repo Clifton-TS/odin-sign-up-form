@@ -10,7 +10,7 @@
 }
 
 .banner {
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color: rgba(0, 0, 0, 0.685);
     align-self: center;
     min-height: fit-content;
     max-height: fit-content;
@@ -47,6 +47,17 @@
     gap: 10%;
     font-size: larger;
     margin-bottom: 1vh;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+label {
+    /* white-space: nowrap; */
 }
 
 input {
