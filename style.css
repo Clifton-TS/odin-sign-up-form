@@ -36,6 +36,20 @@
     font-family: norse;
 }
 
-legend {
-    margin-left: 100px;
+
+
+.legend {
+    font-size: 30px;
+    margin-left: 15%;
+}
+
+.form-row {
+    gap: 10%;
+    font-size: larger;
+    margin-bottom: 1vh;
+}
+
+input {
+    min-height: 4vh;
+    min-width: 15vw;
 }
