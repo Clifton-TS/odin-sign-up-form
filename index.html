@@ -5,58 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="override.css">
     <title>Document</title>
 </head>
 <body>
     <div class="row h-100 g-0">
-        <div class="col-xxl-4 bg-primary min-vh-100 background align-items-center d-flex">
+        <div class="col-xxl-4 bg-primary min-vh-100 background align-items-center d-flex flex-column">
             <div class="banner w-100">
                 <img class="logoImage" src="Images/odin-lined.png" alt="The odin project logo">
                 <h1 class="odinText">ODIN</h1>
             </div>
+            <div class="attribution">
+                <p>
+                    Photo by
+                    <a style="color:#ffffff;" href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Halie West</a>
+                    on
+                    <a style="color:#ffffff;" href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                </p>
+            </div>
         </div>
         <div class="col-xxl-8 bg-white min-vh-100 d-flex flex-column gap-5">
-            <h1 class="desc mx-5 mt-5">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h1>
-            <h1 class="call mx-5">You know you want to.</h1>
+            <h3 class="desc mx-5 mt-5">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h3>
+            <h3 class="call mx-5">You know you want to.</h3>
             <form class="form" action="">
                 <fieldset class="shadow-lg mw-100">
-                    <span class="legend">Let's do this</span>
+                    <span class="legend"><b>Let's do this</b></span>
                     <div class="row h-100 m-5 mt-3">
                         <div class="row-4 d-flex form-row">
                             <div class="form-group">
-                                <label for="f-name">First Name:</label>
+                                <label for="f-name">FIRST NAME:</label>
                                 <input type="text" class="form-control border-2 " id="f-name">
                             </div>
                             <div class="form-group">
-                                <label for="l-name">Last Name:</label>
+                                <label for="l-name">LAST NAME:</label>
                                 <input type="text" class="form-control border-2" id="l-name">
                             </div>
                         </div>
                         <div class="row-4 d-flex form-row">
                             <div class="form-group">
-                                <label for="email">Email address:</label>
+                                <label for="email">EMAIL ADDRESS:</label>
                                 <input type="email" class="form-control border-2" id="email">
                             </div>
                             <div class="form-group">
-                                <label for="phone">Phone Number:</label>
+                                <label for="phone">PHONE NUMBER:</label>
                                 <input type="tel" class="form-control border-2" id="phone">
                             </div>
                         </div>
                         <div class="row-4 d-flex form-row">
                             <div class="form-group">
-                                <label for="pwd">Password:</label>
+                                <label for="pwd">PASSWORD:</label>
                                 <input type="password" class="form-control border-2" id="pwd">
                             </div>
                             <div class="form-group">
-                                <label for="pwd-c">Confirm Password:</label>
-                                <input type="password" class="form-control border-2" id="pwd-c">
+                                <label for="pwdc">CONFIRM PASSWORD:</label>
+                                <input type="password" class="form-control border-2" id="pwdc">
                             </div>
                         </div>
+                        <label for="pwdc" class="text-danger" id = "pwdAlert">*Passwords must match.</label>
                     </div>
-                    
                 </fieldset>
+                <button type="button" class="create btn btn-primary">Create Account</button>
+                <h5 class="login">Already have an account? <a href="#" class="text-primary">Log in</a></h5>
             </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

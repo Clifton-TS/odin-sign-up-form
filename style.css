@@ -3,6 +3,10 @@
     src: url(Fonts/Norse-Bold.otf);
   }
 
+body {
+    font-family: sans-serif
+}
+
 .background {
     background-image: url(Images/leaves.jpg);
     background-size: cover;
@@ -10,6 +14,7 @@
 }
 
 .banner {
+    margin-top: 30vh;
     background-color: rgba(0, 0, 0, 0.685);
     align-self: center;
     min-height: fit-content;
@@ -36,7 +41,19 @@
     font-family: norse;
 }
 
+.attribution {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: white;
+    margin-left: 4vw;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
 
 .legend {
     font-size: 30px;
@@ -45,7 +62,7 @@
 
 .form-row {
     gap: 10%;
-    font-size: larger;
+    font-size: medium;
     margin-bottom: 1vh;
 }
 
@@ -54,13 +71,22 @@
     flex-direction: column;
     align-content: flex-end;
     justify-content: flex-end;
-}
-
-label {
-    /* white-space: nowrap; */
+    flex-wrap: wrap;
 }
 
 input {
     min-height: 4vh;
     min-width: 15vw;
+}
+
+.create {
+    width: 12rem;
+    min-height: 6vh;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.login {
+    margin-top: 10px;
+    margin-left: 60px;
 }
